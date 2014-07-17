@@ -173,9 +173,10 @@ void calculate_award_score( int award, int p, _score* result )
 		case AW_STALKER :
 			result->score1 = (	PLAYERS[ p ].frags_per_weapon[ W_BATTLEAXE ]	+
 						PLAYERS[ p ].frags_per_weapon[ W_KNIFE ]		+
-						PLAYERS[ p ].frags_per_weapon[ W_SYRINGE ]		+
+						PLAYERS[ p ].frags_per_weapon[ W_FAILED_OPERATION ]		+
 						PLAYERS[ p ].frags_per_weapon[ W_DISEASE ]		+
-						PLAYERS[ p ].frags_per_weapon[ W_WRENCH ]			);
+						PLAYERS[ p ].frags_per_weapon[ W_WRENCH ]		+
+						PLAYERS[ p ].frags_per_weapon[ W_NEEDLE_PRICK ]);
 			break;
 		case AW_TOSSER :
 			result->score1 = PLAYERS[ p ].frags_per_weapon[ W_HAND_GRENADE ];

@@ -140,11 +140,13 @@ t_pattern LOG_PATTERNS[]= {
 	"%v succumbed to [^sally^7 ]%k's infection.\x0a"							, LT_FRAG, T_KILL	, W_DISEASE					, NO_INFO		, NO_INFO,
 	"%v rotted to death due to [^sally^7 ]%k's virus.\x0a"						, LT_FRAG, T_KILL	, W_DISEASE					, NO_INFO		, NO_INFO,
 	"%v decomposed rapidly as a result of [^sally^7 ]%k's disease.\x0a"			, LT_FRAG, T_KILL	, W_DISEASE					, NO_INFO		, NO_INFO,
-	"%v didn't survive [^sally^7 ]%k's operation.\x0a"							, LT_FRAG, T_KILL	, W_SYRINGE					, NO_INFO		, NO_INFO,
-	"%v was too weak to live through [^sally^7 ]%k's needle prick.\x0a"			, LT_FRAG, T_KILL	, W_SYRINGE					, NO_INFO		, NO_INFO,
+	"%v didn't survive [^sally^7 ]%k's operation.\x0a"							, LT_FRAG, T_KILL	, W_FAILED_OPERATION		, NO_INFO		, NO_INFO,
+	"%v was too weak to live through [^sally^7 ]%k's needle prick.\x0a"			, LT_FRAG, T_KILL	, W_FAILED_OPERATION		, NO_INFO		, NO_INFO,
+	"%v felt [^sally^7 ]%k's little prick.\x0a"									, LT_FRAG, T_KILL	, W_NEEDLE_PRICK			, NO_INFO		, NO_INFO,
+	"%v was penetrated by [^sally^7 ]%k's needle prick.\x0a"					, LT_FRAG, T_KILL	, W_NEEDLE_PRICK			, NO_INFO		, NO_INFO,
 	// q3f
 	"%v succumbed to [ally ]%k's infection\x0a"									, LT_FRAG, T_KILL	, W_DISEASE					, NO_INFO		, NO_INFO,
-	"%v didn't survive [ally ]%k's operation\x0a"								, LT_FRAG, T_KILL	, W_SYRINGE					, NO_INFO		, NO_INFO,
+	"%v didn't survive [ally ]%k's operation\x0a"								, LT_FRAG, T_KILL	, W_FAILED_OPERATION		, NO_INFO		, NO_INFO,
 	// q3f
 
 	// flamethrower

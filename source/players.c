@@ -76,7 +76,8 @@ long close_range_frags( int p )
 	result = PLAYERS[ p ].frags_per_weapon[ W_BATTLEAXE ] +
 			 PLAYERS[ p ].frags_per_weapon[ W_KNIFE		] +
 			 PLAYERS[ p ].frags_per_weapon[ W_WRENCH	] +
-			 PLAYERS[ p ].frags_per_weapon[ W_SYRINGE	] ;
+			 PLAYERS[ p ].frags_per_weapon[ W_FAILED_OPERATION	] +
+			 PLAYERS[ p ].frags_per_weapon[ W_NEEDLE_PRICK	];
 
 	return result;
 
