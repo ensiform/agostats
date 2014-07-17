@@ -171,6 +171,10 @@ void calculate_award_score( int award, int p, _score* result )
 						PLAYERS[ p ].frags_per_weapon[ W_AUTOSENTRY_EXPLOSION ] +
 						PLAYERS[ p ].frags_per_weapon[ W_CRUSHED_BY_SENTRY ]);
 			break;
+		case AW_SUPPLY_STATION :
+			result->score1 = (	PLAYERS[ p ].frags_per_weapon[ W_SUPPLY_STATION_EXPLOSION ] + 
+						PLAYERS[ p ].frags_per_weapon[ W_CRUSHED_BY_SUPPLYSTATION ]);
+			break;
 		case AW_STALKER :
 			result->score1 = (	PLAYERS[ p ].frags_per_weapon[ W_BATTLEAXE ]	+
 						PLAYERS[ p ].frags_per_weapon[ W_KNIFE ]		+
@@ -284,6 +288,7 @@ meta_award AWARD_LIST[] = {
 	AW_NAILGUN,					AG_SPECIALIST,						"Nailgun",					default_compare,	SO_DESCENDING,	TRUE,
 	AW_MINIGUN,					AG_SPECIALIST,						"Minigun",					default_compare,	SO_DESCENDING,	TRUE,
 	AW_SENTRY,					AG_SPECIALIST,						"Sentry",					default_compare,	SO_DESCENDING,	TRUE,
+	AW_SUPPLY_STATION,			AG_SPECIALIST,						"Supply Station",			default_compare,	SO_DESCENDING,	TRUE,
 	AW_STALKER,					AG_SPECIALIST,						"Stalker",					default_compare,	SO_DESCENDING,	TRUE,
 	AW_TOSSER,					AG_SPECIALIST,						"Tosser",					default_compare,	SO_DESCENDING,	TRUE,
 	AW_SANDMAN,					AG_SPECIALIST,						"Enter sandman",			default_compare,	SO_DESCENDING,	TRUE,
@@ -561,6 +566,9 @@ void award_output_description( int award, int for_highscore, _highscore_type *hi
 			break;
 		case AW_SENTRY :
 			sprintf( outbuf, " for letting his autosentry get %ld kills.", final_award_score.score1 );
+			break;
+		case AW_SUPPLY_STATION:
+			sprintf( outbuf, " for letting his supply station get %ld kills.", final_award_score.score1 );
 			break;
 		case AW_STALKER :
 			sprintf( outbuf, " for %ld close range kills.",final_award_score.score1 );

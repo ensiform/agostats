@@ -334,7 +334,8 @@ t_pattern LOG_PATTERNS[]= {
 	"%v got nailed hard by [^sally^7 ]%k.\x0a"									, LT_FRAG, T_KILL	, W_SUPER_NAILGUN			, NO_INFO		, NO_INFO,
 	"%v was impaled on [^sally^7 ]%k's nails.\x0a"								, LT_FRAG, T_KILL	, W_SUPER_NAILGUN			, NO_INFO		, NO_INFO,
 
-	// supply station explosion
+	// supply station
+	"%v learned just how heavy [^sally^7 ]%k's supply station really is.\x0a"	, LT_FRAG, T_KILL	, W_CRUSHED_BY_SUPPLYSTATION, NO_INFO		, NO_INFO,
 	"%v didn't know that [^sally^7 ]%k's supply station didn't accept pennies.\x0a", LT_FRAG, T_KILL, W_SUPPLY_STATION_EXPLOSION, NO_INFO		, NO_INFO,
 	"%v had their credit card declined by [^sally^7 ]%k's supply station.\x0a"	, LT_FRAG, T_KILL	, W_SUPPLY_STATION_EXPLOSION, NO_INFO		, NO_INFO,
 	"%v lost an argument with [^sally^7 ]%k's supply station.\x0a"				, LT_FRAG, T_KILL	, W_SUPPLY_STATION_EXPLOSION, NO_INFO		, NO_INFO,
@@ -449,6 +450,7 @@ t_pattern LOG_PATTERNS[]= {
 	"%v became disgusted with {his|her} own rocket aim.\x0a"				, LT_FRAG, T_SUICIDE, W_ROCKET_LAUNCHER_SPLASH 		, NO_INFO		, NO_INFO,
 
 	// supply station
+	"%v learned just how heavy {his|her} supply station really is.\x0a"		, LT_FRAG, T_SUICIDE, W_CRUSHED_BY_SUPPLYSTATION	, NO_INFO		, NO_INFO,
 	"%v used {his|her} supply station as a suicide machine.\x0a"			, LT_FRAG, T_SUICIDE, W_SUPPLY_STATION_EXPLOSION	, NO_INFO		, NO_INFO,
 	"%v fell out with {his|her} supply station.\x0a"						, LT_FRAG, T_SUICIDE, W_SUPPLY_STATION_EXPLOSION	, NO_INFO		, NO_INFO,
 
