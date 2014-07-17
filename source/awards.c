@@ -168,7 +168,8 @@ void calculate_award_score( int award, int p, _score* result )
 		case AW_SENTRY :
 			result->score1 = (	PLAYERS[ p ].frags_per_weapon[ W_AUTOSENTRY_BULLET ] + 
 						PLAYERS[ p ].frags_per_weapon[ W_AUTOSENTRY_ROCKET ] + 
-						PLAYERS[ p ].frags_per_weapon[ W_AUTOSENTRY_EXPLOSION ] );
+						PLAYERS[ p ].frags_per_weapon[ W_AUTOSENTRY_EXPLOSION ] +
+						PLAYERS[ p ].frags_per_weapon[ W_CRUSHED_BY_SENTRY ]);
 			break;
 		case AW_STALKER :
 			result->score1 = (	PLAYERS[ p ].frags_per_weapon[ W_BATTLEAXE ]	+
