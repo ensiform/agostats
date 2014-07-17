@@ -560,7 +560,7 @@ void award_output_description( int award, int for_highscore, _highscore_type *hi
 			sprintf( outbuf, " for %ld minigun kills.", final_award_score.score1 );
 			break;
 		case AW_SENTRY :
-			sprintf( outbuf, " for letting his autosentry get %ld kills.", final_award_score	);
+			sprintf( outbuf, " for letting his autosentry get %ld kills.", final_award_score.score1 );
 			break;
 		case AW_STALKER :
 			sprintf( outbuf, " for %ld close range kills.",final_award_score.score1 );
