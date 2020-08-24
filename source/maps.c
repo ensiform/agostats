@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "globals.h"
 #include "maps.h"
 #include "matching.h"
@@ -93,8 +94,8 @@ mapinfo MAP_INFOS[] = {
 	"etf_genders"				, "Genders"							, " 2968    0    1    0    0",
 	"etf_gotduck"				, "Got Duck?"						, " 1194    0    0    0    0",
 	"etf_hardcore"				, "Hardcore"						, "18049  260    0    0    0",
-	"etf_ìmpact"				, "impact"							, " 4962   36   32    0    0", 
-	"etf_ìnert"					, "Inert Anti-Chase CTF"			, " 3442    0    0    0    0", 
+	"etf_ï¿½mpact"				, "impact"							, " 4962   36   32    0    0", 
+	"etf_ï¿½nert"					, "Inert Anti-Chase CTF"			, " 3442    0    0    0    0", 
 	"etf_japanc"				, "Japanese castles"				, " 9224  214  248    0    0",
 	"etf_lastresort"			, "Last Resort"						, "11695   96    0    0    0",
 	"etf_mach"					, "Mach"							, " 4278  278    0    0    0",
